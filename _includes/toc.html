@@ -1,0 +1,15 @@
+<aside class="toc-sidebar">
+  <h3>Contents</h3>
+  <nav id="TableOfContents">
+    {% include toc.html html=content %}
+  </nav>
+</aside>
+
+<style>
+  .toc-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+</style>

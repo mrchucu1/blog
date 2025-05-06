@@ -1,0 +1,92 @@
+/* Color Scheme */
+:root {
+  --primary-bg: #121212;
+  --primary-text: #e0e0e0;
+  --heading-gradient: linear-gradient(135deg, #4285F4, #64B5F6);
+  --accent: #FFA726;
+  --link-color: #64B5F6;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Gradient Headings */
+.tech-heading {
+  background: var(--heading-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Layout */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Blog Post Cards */
+.post-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Code Blocks */
+.highlight {
+  position: relative;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  background: #1a1a1a;
+
+  &::after {
+    content: attr(data-lang);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.25rem 0.75rem;
+    background: #333;
+    color: #888;
+    font-size: 0.8rem;
+    border-radius: 0 6px 0 6px;
+  }
+}
+
+/* Progress Bar */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  z-index: 9999;
+}
+
+/* Dark/Light Toggle */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  // Add button styles
+}
