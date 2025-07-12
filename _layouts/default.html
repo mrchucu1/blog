@@ -5,8 +5,15 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% include head.html %}
   </head>
   <body>
-    {{ content }}
+    {% include navigation.html %}
+
+    <div class="main-content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,9 @@
+<footer class="footer">
+  <p>© {{ 'now' | date: "%Y" }} Diego Navarro. All rights reserved.</p>
+  <p>
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+    {% if site.twitter_username %}
+    | <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+    {% endif %}
+  </p>
+</footer>

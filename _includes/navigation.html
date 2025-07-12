@@ -1,10 +1,10 @@
-<nav class="navbar">
+<nav id="menu" class="navbar">
   <div class="container">
-    <a href="/" class="logo">Diego's Blog</a>
-    <div class="nav-links">
-      <a href="/experience">Experience</a>
-      <a href="/projects">Projects</a>
-      <a href="/archive">Archive</a>
-    </div>
+    <a href="/" class="logo">{{ site.title | default: "Diego's Blog" }}</a>
+    <ul class="nav-links">
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/archive">Archive</a></li>
+    </ul>
   </div>
 </nav>
