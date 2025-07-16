@@ -140,4 +140,4 @@ It's been an incredible journey so far. Stepping outside of established framewor
 
 Stay tuned for Part 2.
 
-#### FWI if you want to see source code for this project go to [the repo](https://github.com/mrchucu1/rusty-rect).
+#### FWI if you want to see source code for this project go to [the repo](https://github.com/mrchucu1/rusty-react).
